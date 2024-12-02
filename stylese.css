@@ -1,0 +1,110 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    background-color: #f8e8e8;
+    color: #d95f76;
+    padding: 20px 10px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .contact-form, .contact-info {
+    flex: 1 1 40%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2, .contact-info h2 {
+    color: #d95f76;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #d95f76;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #333;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .contact-info .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .contact-info .social-icons a img {
+    width: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .contact-info .social-icons a img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  

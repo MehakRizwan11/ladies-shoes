@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation Form</title>
+    <link rel="stylesheet" href="stylesfor.css">
+</head>
+<body>
+    <div class="confirmation-form-container">
+        <h1>Order Confirmation</h1>
+        <p>Please confirm your order details and shipping information below.</p>
+
+        <form id="orderForm">
+            <fieldset>
+                <legend>Order Details</legend>
+                <label for="orderNumber">Order Number:</label>
+                <input type="text" id="orderNumber" name="orderNumber" value="#12345" readonly>
+
+                <label for="item">Item:</label>
+                <input type="text" id="item" name="item" value="Elegant High-Heel Shoes" readonly>
+
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" value="7" readonly>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" value="$120.00" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Confirm Order</button>
+            <a href="index.html" class="btn">Continue Shopping</a>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

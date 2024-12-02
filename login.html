@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Sign Up</title>
+  <link rel="stylesheet" href="styleslog.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form-container" id="login">
+      <h2>Login</h2>
+      <form>
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password" required>
+        </div>
+        <!-- CAPTCHA -->
+        <div class="captcha-group">
+          <label for="login-captcha">Enter the number: <span id="captcha"></span></label>
+          <input type="text" id="login-captcha" placeholder="Enter CAPTCHA" required>
+        </div>
+        <a href="index.html"><button type="button" onclick="validateCaptcha('login')">Login</button></a>
+        <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign Up</a></p>
+      </form>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form-container" id="signup" style="display: none;">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="input-group">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" placeholder="Enter your full name" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Create a password" required>
+        </div>
+        <!-- CAPTCHA -->
+        <div class="captcha-group">
+          <label for="signup-captcha">Enter the number: <span id="captcha-signup"></span></label>
+          <input type="text" id="signup-captcha" placeholder="Enter CAPTCHA" required>
+        </div>
+       <a href="index.html"> <button type="button" onclick="validateCaptcha('signup')">Sign Up</button></a>
+        <p>Already have an account? <a href="#" onclick="switchForm('login')">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="scriptlog.js"></script>
+</body>
+</html>
